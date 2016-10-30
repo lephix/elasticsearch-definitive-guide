@@ -1,5 +1,6 @@
 === 应对故障
 我们之前说过 Elasticsearch 可以应对节点故障，接下来让我们尝试下这个功能。
+((("shards", "horizontal scaling and safety of data")))((("failure of nodes, coping with")))((("master node", "killing and replacing")))((("nodes", "failure of")))((("clusters", "coping with failure of nodes")))
 如果我们关闭第一个节点，这时集群的状态为<<cluster-post-kill>>
 
 [[cluster-post-kill]]
@@ -9,6 +10,7 @@ image::images/elas_0206.png["关闭了一个节点后的集群"]
 我们关闭的节点是一个主节点。而集群必须拥有一个主节点来保证正常工作，所以发生的第一件事情就是选举一个新的主节点： `Node 2` 。
 
 在我们关闭 `Node 1` 的同时也失去了主分片 `1` 和 `2` ，并且在缺失主分片的时候索引也不能正常工作。
+((("primary shards", "node failure and")))
 如果此时来检查集群的状况，我们看到的状态将会为 `red` ：不是所有主分片都在正常工作。
 
 幸运的是，在其它节点上存在着这两个主分片的完整副本，
