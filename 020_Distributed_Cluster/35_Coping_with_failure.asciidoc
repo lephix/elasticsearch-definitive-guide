@@ -1,3 +1,4 @@
+[[_coping_with_failure]]
 === 应对故障
 我们之前说过 Elasticsearch 可以应对节点故障，接下来让我们尝试下这个功能。
 ((("shards", "horizontal scaling and safety of data")))((("failure of nodes, coping with")))((("master node", "killing and replacing")))((("nodes", "failure of")))((("clusters", "coping with failure of nodes")))
