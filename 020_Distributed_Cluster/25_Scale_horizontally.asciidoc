@@ -1,7 +1,7 @@
 [[_scale_horizontally]]
 === 水平扩容
 
-怎样为我们的正在增长中的应用程序按需扩容呢？
+怎样为我们的正在增长中的应用程序按需扩容呢？((("scaling", "horizontally")))((("clusters", "three-node cluster")))((("primary shards", "in three-node cluster")))
 当启动了第三个节点，我们的集群将会看起来如<<cluster-three-nodes>>所示。
 
 [[cluster-three-nodes]]
