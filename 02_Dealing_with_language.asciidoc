@@ -9,14 +9,14 @@ ifndef::es_build[= placeholder2]
 ifdef::es_build[]
 [quote,Matt Groening]
 ____
-``我认识这句话里的所有单词，但是我不能理解它。''
+``我认识这句话里的所有单词，但并不能理解全句。''
 ____
 endif::es_build[]
 
 ifndef::es_build[]
 ++++
 <blockquote data-type="epigraph">
-    <p>我认识这句话里的所有单词，但是我不能理解它。</p>
+    <p>我认识这句话里的所有单词，但并不能理解全句。</p>
     <p data-type="attribution">Matt Groening</p>
 </blockquote>
 ++++
